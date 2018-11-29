@@ -1,4 +1,5 @@
 const path = require('path')
+const fs = require('fs')
 const webpack = require('webpack')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 module.exports = {
@@ -27,10 +28,14 @@ module.exports = {
     }]
   },
   devServer: {
+    disableHostCheck: true,
     hot: false,
-    https: true,
+    https: {
+      key: fs.readFileSync(path.join(__dirname, '../cert/2_wx.firecloud.club.key')),
+      cert: fs.readFileSync(path.join(__dirname, '../cert/1_wx.firecloud.club_bundle.crt'))
+    },
     host: '0.0.0.0',
-    port: '8001',
+    port: '443',
     open: false,
     publicPath: '/'
   },
