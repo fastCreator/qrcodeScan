@@ -8,8 +8,10 @@
     "demo": "webpack-dev-server --inline --progress --config build/webpack.config.js"
   },
   "dependencies": {
+    "jsqr": "^1.1.1",
     "jsqrcode": "^0.0.7",
     "qrcode-parser": "^1.2.0",
+    "upng-js": "^2.1.0",
     "worker-loader": "^2.0.0"
   },
   "devDependencies": {
