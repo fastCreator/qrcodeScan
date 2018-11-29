@@ -129,7 +129,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n//访问用户媒体设备的
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("module.exports = function() {\n  return new Worker(__webpack_require__.p + \"eb343352c5d47964df78.worker.js\");\n};\n\n//# sourceURL=webpack://qrcodeScan/./lib/parse.worker.js?");
+eval("module.exports = function() {\n  return new Worker(__webpack_require__.p + \"dac50925527f0e229264.worker.js\");\n};\n\n//# sourceURL=webpack://qrcodeScan/./lib/parse.worker.js?");
 
 /***/ }),
 
