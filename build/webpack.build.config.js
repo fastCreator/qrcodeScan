@@ -1,9 +1,10 @@
+const path = require('path')
 module.exports = {
   entry: './lib/index.js',
   mode: 'production',
   output: {
     filename: 'qrcode-scan.js',
-    path: __dirname + '../dist',
+    path: path.join(__dirname, '../dist'),
     libraryTarget: 'this',
     library: 'qrcodeScan',
     libraryExport: "default"

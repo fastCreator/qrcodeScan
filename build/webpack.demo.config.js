@@ -1,3 +1,4 @@
+const path = require('path')
 const webpack = require('webpack')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 module.exports = {
@@ -5,7 +6,7 @@ module.exports = {
   mode: 'development',
   output: {
     filename: 'qrcode-scan.js',
-    path: __dirname + '../dist',
+    path: path.join(__dirname, '../dist'),
     libraryTarget: 'this',
     library: 'qrcodeScan',
     libraryExport: "default"
