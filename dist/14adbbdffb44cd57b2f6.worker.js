@@ -94,7 +94,7 @@
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _qrcode_parser__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./qrcode-parser */ \"./lib/qrcode-parser.js\");\n\r\n\r\nonmessage = function (e) {\r\n  console.log(1111111111111)\r\n  Object(_qrcode_parser__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(e.data).then(d => {\r\n    postMessage(JSON.stringify(d));\r\n  }).catch(err => {\r\n    postMessage('null');\r\n  })\r\n};\n\n//# sourceURL=webpack://qrcodeScan/./lib/parse.worker.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _qrcode_parser__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./qrcode-parser */ \"./lib/qrcode-parser.js\");\n\r\n\r\nonmessage = function (e) {\r\n  Object(_qrcode_parser__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(e.data).then(d => {\r\n    postMessage(JSON.stringify(d));\r\n  }).catch(err => {\r\n    postMessage('null');\r\n  })\r\n};\n\n//# sourceURL=webpack://qrcodeScan/./lib/parse.worker.js?");
 
 /***/ }),
 
