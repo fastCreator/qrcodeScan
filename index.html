@@ -12,7 +12,10 @@
 </body>
 <script>
   qrcodeScan({
-    success(o) { alert(o) }
+    success(o) {
+      alert(o)
+      window.open(o.data)
+    }
   })
 </script>
 
